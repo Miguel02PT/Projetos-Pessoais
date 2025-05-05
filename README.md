@@ -4,6 +4,7 @@ Este repositório serve como espaço de treino para aprender, praticar e experim
 
 - [The Odin Project (TOP)](https://www.theodinproject.com/)
 - [freeCodeCamp (FCC)](https://www.freecodecamp.org/)
+- Projetos da Licenciatura Engenharia Informática (estou a frequentar de momento, 1º ano 2º semestre (Universidade Aberta))
 - Outros desafios, exercícios e ideias pessoais
 
 ## Estrutura
