@@ -1,18 +1,42 @@
 *{
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   background-color: #1F2937;
-  padding: 70px;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 50px;
+  width: 100%;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: bold;
+}
+
+.logo a {
+    color: #F9FAF8;
+}
+
+.logo img {
+  max-width: 100%;
+  height: 50px;
+  width: 50px;
+  margin-left: 15px;
+  display: inline-block;
+  justify-content: flex-end;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .hero-text {
@@ -25,13 +49,16 @@
   font-size: 48px;
   color: #F9FAF8;
   font-weight: 900;
-  margin-bottom: 1px;
+  margin-bottom: 10px;
+  line-height: 50px;
 }
 
 .herosectext {
   color: #E5E7EB;
   font-size: 18px;
-   margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .heromaintext span {
@@ -47,7 +74,6 @@
   font-size: 18px;
   display: flex;
   gap: 30px; 
-  color: #E5E7EB;
 }
 
 a {
@@ -64,6 +90,13 @@ a {
   font-size: 18px;
   width: auto;
   padding: 12px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.herobtn:hover {
+  background-color: #2a6fd1;
 }
 
 nav {
@@ -72,21 +105,106 @@ nav {
   align-items: center;
 }
 
-.logo {
-  font-size: 24px;
-  color: #F9FAF8;
-}
-
 .hero-image {
   flex: 1;
-  min-height: 250px;
-  max-width: 500px;
-  background-color: grey;
+  max-width: 1000px; 
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; 
   align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  border: 3px solid black;
 }
 
 .footer {
   background-color: #1F2937;
+}
+
+
+/*Secção Imagens*/
+
+.section-titles {
+  display: flex;
+  gap: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: #1F2937;
+  font-weight: 900;
+  margin-bottom: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  width: 40%;
+  margin: 8px auto;
+}
+
+.section-titles p {
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+
+.section-titles p:hover {
+  border-bottom-color: #3882F6; 
+}
+
+.imagens {
+  display: flex; /* Coloca os cards em linha */
+  justify-content: center; /* Centraliza no ecrã */
+  gap: 40px; /* Espaçamento entre os cards */
+  flex-wrap: wrap; /* Permite que quebrem para nova linha em ecrãs pequenos */
+  margin-bottom: 60px; /* Espaço inferior para separar de outras secções */
+}
+
+.image-card {
+  display: flex; /* Ativa flex dentro do card */
+  flex-direction: column; /* Coloca imagem e legenda na vertical */
+  align-items: center; /* Centraliza conteúdo horizontalmente */
+  width: 150px; /* Define largura consistente */
+  text-align: center; /* Centraliza o texto da legenda */
+}
+
+.image-card img {
+  width: 150px; /* Tamanho fixo para consistência */
+  height: 150px;
+  object-fit: cover; /* Garante que a imagem preencha sem distorcer */
+  border-radius: 12px; /* Cantos arredondados (estética moderna) */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border: 3px solid black; 
+}
+
+.image-card p {
+  margin-top: 8px; /* Espaço entre imagem e texto */
+  font-size: 16px;
+  color: #1F2937; /* Cor escura (mesma do restante texto principal) */
+}
+
+.quote-section {
+  background-color: #E5E7EB;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-author {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #1F2937;
+  align-items: flex-end;
 }
